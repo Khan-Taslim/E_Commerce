@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col xs-12 col-md-12 col-xl-12">
+            <div class="card">
+                <div  class="card-body">
+                    <table class="table">
+                        <tr>
+                            <th>pcompany</th>
+                            <th>pname</th>
+                            <th>pspec</th>
+                            <th>pprice</th>
+                            <th>color</th>
+                            <th>image</th>
+                            <th>id</th>
+                            <th>Actions</th>
+                        </tr>
+                        <tr *ngFor="let s of localvar">
+                            <td><h3>{{s.pcompany}}</h3></td>
+                            <td><h5>{{s.pname}}</h5></td>
+                            <td><h5>{{s.pspec}}</h5></td>
+                            <td><h5>{{s.pprice}}</h5></td>
+                            <td><h5>{{s.color}}</h5></td>
+                            <td><img src="{{s.image}}" alt=""></td>
+                            <td><h2>{{s.id}}</h2></td>
+                            <td><button class="btn btn-danger" (click)="deletedata(s.id)">Delete</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

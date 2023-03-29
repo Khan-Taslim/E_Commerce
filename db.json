@@ -1,0 +1,76 @@
+{
+  "seller": [
+    {
+      "id": 1,
+      "name": "taslim",
+      "email": "khantaslim305@gmail.com",
+      "password": "taslim@123"
+    },
+    {
+      "id": 2,
+      "name": "wasim",
+      "email": "wasim@gmail.com",
+      "password": "wasim@123"
+    },
+    {
+      "name": "jeevan",
+      "email": "jeevan@gmail.com",
+      "password": "jeevan@123",
+      "id": 4
+    },
+    {
+      "name": "tassu",
+      "email": "tassu@gmail.com",
+      "password": "Tassu@11111",
+      "id": 5
+    },
+    {
+      "name": "siddhart",
+      "email": "sid@gmail.com",
+      "password": "123456789",
+      "id": 6
+    },
+    {
+      "name": "shubhra",
+      "email": "subhra@gmail.com",
+      "password": "tassu",
+      "id": 7
+    },
+    {
+      "name": "taslimkhan",
+      "email": "khantaslim@gmail.com",
+      "password": "123",
+      "id": 8
+    }
+  ],
+  "products": [
+    {
+      "pcompany": "One plus",
+      "pname": "nord ce 5g",
+      "pspec": "8gb ram 256 rom",
+      "pprice": "28999",
+      "color": "Black",
+      "image": "https://cdn.pixabay.com/photo/2018/08/02/00/02/oneplus-3578574__340.jpg",
+      "id": 1
+    },
+    {
+      "pcompany": "Lenovo",
+      "pname": "Laptop S145",
+      "pspec": "8gbram 256ssd 1tbhdd 4gbgraphiccard",
+      "pprice": "54999",
+      "color": "grey",
+      "image": "https://cdn.pixabay.com/photo/2016/03/27/07/12/apple-1282241__340.jpg",
+      "id": 2
+    },
+    {
+      "pcompany": "Tupperware",
+      "pname": "Water bottle",
+      "pspec": "1 litre ",
+      "pprice": "299",
+      "color": "blue",
+      "image": "https://media.istockphoto.com/id/1175470055/photo/copper-water-bottle-and-glass-of-water-for-environment-friendly-use.jpg?b=1&s=170667a&w=0&k=20&c=fJuQ8Gb-JLHmBWzz8-45sVb8tJOzkRboxaJg8CNEoTg=",
+      "id": 3
+    }
+    
+  ]
+}

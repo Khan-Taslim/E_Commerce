@@ -1,0 +1,43 @@
+<nav class="navbar navbar-light bg-dark">
+<div class="container-fluid">
+            <h3 style="color:white">E_Com</h3>
+            <form class="d-flex" *ngIf="logfun=='default'">
+                <input type="search" class="formcontrol" placeholder="Search here" aria-label="Search">
+                <button type="submit" class="btn btn-danger mx-2 ">Search</button>
+            </form>
+            <div class="menu d-flex nav justify-content-end">
+                <div [ngSwitch]="logfun" class="collapse navbar-collapse d-flex " id="navbarTogglerDemo01">
+                <ul *ngSwitchCase="'default'" class="nav justify-content-end" style="color: white; margin-right:50px ;">
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" [routerLink]="''">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" [routerLink]="'seller-auth'">Seller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" [routerLink]="'login'">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" [routerLink]="'cart'">cart</a>
+                    </li>
+                </ul>
+                <ul *ngSwitchCase="'seller'" class="nav justify-content-end" style="color: white; margin-right:50px ;">
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" [routerLink]="''">{{sellername}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" [routerLink]="'addproduct'">Add product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" [routerLink]="'seller-home'">List Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" (click)="logout()" [routerLink]="''">Logout</a>
+                    </li>
+                </ul>
+
+            </div>
+            </div>
+        </div>
+</nav>
+
