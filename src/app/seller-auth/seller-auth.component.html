@@ -1,51 +1,104 @@
-<div class="container-fluid">
-    <div class="row justify-content-center mt-5">
-        <div class="col-md-4">
-            <div class="card" *ngIf="!showlogin">
-                <h4 class="card-header bg-dark" style="color: white;">Signup Form</h4>
-                <div class="card-body">
-                   <form [formGroup]="signupform" >
-                    <div class="formgroup">
-                        <label for="" class="form-label align-center">Firstname</label>
-                        <input type="text" placeholder="firstname" class="form-control" formControlName="name" name="name">                   
-                     </div>
-                     <div class="formgroup mt-2">
-                        <label for="" class="form-label align-center">Email</label>
-                        <input type="email" placeholder="enter email" class="form-control" formControlName="email" name="email">                   
-                     </div>
-                     <div class="formgroup mt-2">
-                        <label for="" class="form-label align-center">Password</label>
-                        <input type="text" placeholder="lastname" class="form-control" formControlName="password" name="password">                   
-                     </div>
-                     <button type="submit" class="mt-3 w-50 btn btn-primary" (click)="senddata(signupform.value)">SignUp</button><br>
-                     <a class=""  (click)="signup()">Already have account? <span>Click here to login</span></a>
-                     
-                   </form>
-                </div>
-
-
-            </div>
-<!-- 
-            ----------------------------------------------------------------- -->
-
-
-            <div class="card" *ngIf="showlogin">
-                <h4 class="card-header bg-dark" style="color: white;" >Login form</h4>
-                <div class="card-body" >
-                    <form [formGroup]="loginform" >
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="card mt-4" *ngIf="!showlogin">
+                    <h4 class="card-header bg-primary" style="color: white;">Signup Form</h4>
+                    <div class="card-body">
+                       <form [formGroup]="signupform" >
                         <div class="formgroup">
-                            <label for="" class="form-label align-center">email</label>
-                            <input type="email" placeholder="enter email" class="form-control" formControlName="email" name="email">
-                        </div>
-                        <div class="formgroup mt-2">
-                            <label for="" class="form-label align-center">Password</label>
-                            <input type="text" placeholder="Password" class="form-control" formControlName="password" name="password">
-                        </div>
-                        <button type="submit" (click)="checklogin()" class="mt-3 w-50 btn btn-primary">SignUp</button><br>
-                    </form>
-                </div>
-            </div>
+                            <input type="text" placeholder="firstname" class="form-control" formControlName="name" name="name">                   
+                            <label for="" class="form-label align-center">Firstname</label>
 
+                         </div>
+                         <div class="formgroup mt-2">
+                            <input type="email" placeholder="enter email" class="form-control" formControlName="email" name="email">                   
+                            <label for="" class="form-label align-center">Email</label>
+
+                         </div>
+                         <div class="formgroup mt-2">
+                            <input type="text" placeholder="lastname" class="form-control" formControlName="password" name="password">                   
+                            <label for="" class="form-label align-center">Password</label>
+
+                         </div>
+                         <button type="submit" class="mt-3 w-50 btn btn-primary" (click)="senddata(signupform.value)">SignUp</button><br>
+                         <a class=""  (click)="signup()">Already have account? <span>Click here to login</span></a>
+                         <div class="text-center mt-4">
+                                <h6>-----------OR-----------</h6>
+                                <span>Signup using social media</span><br>
+                            <button type="button" class="btn btn-link btn-floating mx-1">
+                              <i class="fab fa-facebook-f"></i>
+                            </button>
+                        
+                            <button type="button" class="btn btn-link btn-floating mx-1">
+                              <i class="fab fa-google"></i>
+                            </button>
+                        
+                            <button type="button" class="btn btn-link btn-floating mx-1">
+                              <i class="fa-twitter"></i>
+                            </button>
+                        
+                            <button type="button" class="btn btn-link btn-floating mx-1">
+                              <i class="fab fa-github"></i>
+                            </button>
+                          </div>
+                         
+                       </form>
+                    </div>
+    
+    
+                </div>
+    <!-- 
+                ----------------------------------------------------------------- -->
+    
+    
+                <div class="card mt-3" *ngIf="showlogin">
+                    <h4 class="card-header bg-primary" style="color: white;" >Login form</h4>
+                    <div class="card-body" >
+                        <form [formGroup]="loginform" >
+                            <div class="form-outline mt-2">
+                                <input type="email" placeholder="enter email" class="form-control" formControlName="email" name="email">
+                                <label for="" class="form-label align-center">Email address</label>
+
+                            </div>
+                            <div class="formgroup mt-2">
+                                <input type="text" placeholder="Password" class="form-control" formControlName="password" name="password">
+                                <label for="" class="form-label align-center">Password</label>
+                            </div>
+                            <button type="submit" (click)="checklogin()" class="mt-3 w-50 btn btn-primary">SignUp</button><br>
+                            <div class="text-center mt-4">
+                              <button type="button" class="btn btn-link btn-floating mx-1">
+                                <i class="fab fa-facebook-f"></i>
+                              </button>
+                          
+                              <button type="button" class="btn btn-link btn-floating mx-1">
+                                <i class="fab fa-google"></i>
+                              </button>
+                          
+                              <button type="button" class="btn btn-link btn-floating mx-1">
+                                <i class="fa-twitter"></i>
+                              </button>
+                          
+                              <button type="button" class="btn btn-link btn-floating mx-1">
+                                <i class="fab fa-github"></i>
+                              </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
         </div>
-    </div>
-</div>
+    </div>    
+
+</body>
+</html>

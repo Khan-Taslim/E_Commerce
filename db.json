@@ -45,24 +45,6 @@
   ],
   "products": [
     {
-      "pcompany": "One plus",
-      "pname": "nord ce 5g",
-      "pspec": "8gb ram 256 rom",
-      "pprice": "28999",
-      "color": "Black",
-      "image": "https://cdn.pixabay.com/photo/2018/08/02/00/02/oneplus-3578574__340.jpg",
-      "id": 1
-    },
-    {
-      "pcompany": "Lenovo",
-      "pname": "Laptop S145",
-      "pspec": "8gbram 256ssd 1tbhdd 4gbgraphiccard",
-      "pprice": "54999",
-      "color": "grey",
-      "image": "https://cdn.pixabay.com/photo/2016/03/27/07/12/apple-1282241__340.jpg",
-      "id": 2
-    },
-    {
       "pcompany": "Tupperware",
       "pname": "Water bottle",
       "pspec": "1 litre ",
@@ -70,7 +52,42 @@
       "color": "blue",
       "image": "https://media.istockphoto.com/id/1175470055/photo/copper-water-bottle-and-glass-of-water-for-environment-friendly-use.jpg?b=1&s=170667a&w=0&k=20&c=fJuQ8Gb-JLHmBWzz8-45sVb8tJOzkRboxaJg8CNEoTg=",
       "id": 3
+    },
+    {
+      "pcompany": "IKEA",
+      "pname": "Sofaset",
+      "pspec": "Sofa cumbed",
+      "pprice": "29000",
+      "color": "white",
+      "image": "https://d3nn873nee648n.cloudfront.net/900x600/19738/1-SM958542.jpg",
+      "id": 4
+    },
+    {
+      "pcompany": "ASUS",
+      "pname": "Lenovo Chromebook S145",
+      "pspec": "8GBRam  512GBSSD 4GbNVDI  1TBHDD  I10 10thGEN",
+      "pprice": "60000",
+      "color": "Black",
+      "image": "https://img5.gadgetsnow.com/gd/images/products/additional/large/G364283_View_2/computer-laptop/laptops/lenovo-v15-82kb0003ge-intel-core-i3-1115g4-11th-gen-15-6-inches-notebook-laptop-8gb-256gb-ssd-windows-11-iron-grey-1-70-kg-.jpg",
+      "id": 6
+    },
+    {
+      "pcompany": "Lava ",
+      "pname": "Blaze 5G",
+      "pspec": " (Glass Blue, 4GB RAM, UFS 2.2 128GB Storage) | 5G Ready | 50MP AI Triple Camera | Upto 7GB Expandable RAM | Charger Included | Clean Android (No Bloatware)",
+      "pprice": "10499",
+      "color": "white",
+      "image": "https://m.media-amazon.com/images/I/51ZrR4rr5XL._SX679_.jpg",
+      "id": 7
+    },
+    {
+      "pcompany": "One Plus",
+      "pname": "OnePlus 11R 5G ",
+      "pspec": "(Sonic Black, 8GB RAM, 128GB Storage) 50MP Main Camera with Sony IMX890 | OxygenOS based on Android 13 |Battery & Charging: 5000 mAh with 100W SUPERVOOC | In-Display Fingerprint Sensor",
+      "pprice": "40000",
+      "color": "Black",
+      "image": "https://m.media-amazon.com/images/I/71qjUzUt+ML._SX679_.jpg",
+      "id": 8
     }
-    
   ]
 }

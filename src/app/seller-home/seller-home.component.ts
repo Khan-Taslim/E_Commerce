@@ -15,7 +15,7 @@ export class SellerHomeComponent implements OnInit{
     this.serv.getproducts().subscribe(res=>this.localvar=res);
   }
 
-  deletedata(id:any):void
+  deletedata(id:any)
   {
     this.serv.ddata(id).subscribe(res=>console.log(res));
   }

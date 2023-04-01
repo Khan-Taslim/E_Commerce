@@ -41,7 +41,7 @@ export class SellerserviceService {
   {
     return this.service.post(`http://localhost:3000/products`,data);
   }
-  ddata(id:any){
-    return this.service.delete(`http://localhost:3000/products`,id)
+  ddata(id:number){
+    return this.service.delete(`http://localhost:3000/products/${id}`);
   }
 }
